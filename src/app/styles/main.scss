@@ -1,0 +1,131 @@
+@import "./variables.scss";
+
+.main {
+    * {
+        font-family: $font-epilogue;
+    }
+    
+    display: flex;
+    flex-direction: column-reverse;
+
+    &__info-container {
+        width: 100%;
+    }
+
+    &__info {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    &__title {
+        text-align: center;
+        padding: 1rem;
+        
+        font-weight: 700;
+        font-size: 2.2rem;
+    }
+
+    &__text {
+        text-align: center;
+        color: $medium-gray;
+        padding: 0 0.7rem;
+        line-height: 1.5rem;
+        margin-bottom: 1.7rem;
+    }
+
+    &__button {
+        padding: 1rem 1.2rem;
+        color: $almost-white;
+        width: max-content;
+        border: none;
+        background-color: $almost-black;
+        border-radius: 10px;
+        margin-bottom: 1.7rem;
+    }
+
+    &__footer {
+        display: flex;
+        padding: 1rem;
+        justify-content: space-between;
+        img {
+            width: 20%;
+            object-fit: contain;
+        }
+    }
+
+    &__image-hero {
+        &--mobile {
+            margin-bottom: 1.7rem;
+        }
+
+        &--desktop {
+            display: none;
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .main {     
+        flex-direction: row;
+        padding: 6rem;
+    
+        &__info-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 2rem 7rem 0 0;
+        }
+    
+        &__info {
+            display: flex;
+            height: 100%;
+        }
+    
+        &__title {
+            text-align: left;
+            padding: 6rem 0 0 0;
+            font-size: 5rem;
+            margin-bottom: 5.6rem;
+        }
+    
+        &__text {
+            text-align: left;
+            padding: 0 4rem 0 0;
+            margin-bottom: 4rem;
+            font-size: 1.2rem;
+
+        }
+    
+        &__button {
+            padding: 1.2rem 1.5rem;
+            align-self: flex-start;
+            background-color: $almost-black;
+            border-radius: 10px;
+            font-size: 1.2rem;
+
+            &:hover {
+                cursor: pointer;
+                background-color: $almost-white;
+                color: $almost-black;
+                border: 1px solid $almost-black;
+            }
+        }
+    
+        &__footer {
+            padding: 0rem;
+            padding-right: 3rem;
+        }
+    
+        &__image-hero {
+            &--mobile {
+                display: none;
+            }
+    
+            &--desktop {
+                display: inline;
+            }
+        }
+    }
+}
