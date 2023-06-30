@@ -27,5 +27,7 @@ const closeMenu = () =>{
     btnCloseMenu.addEventListener('click', () =>{
         menuMobileContainer.classList.add('inactive')
         body.classList.remove('body-fixed')
+        companyOptions.classList.add('inactive')
+        featuresOptions.classList.add('inactive')
     })
 }
