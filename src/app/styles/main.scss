@@ -81,6 +81,7 @@
     
         &__info {
             display: flex;
+            align-items: flex-start;
             height: 100%;
         }
     
@@ -93,7 +94,8 @@
     
         &__text {
             text-align: left;
-            padding: 0 4rem 0 0;
+            padding: 0;
+            width: 80%;
             margin-bottom: 4rem;
             font-size: 1.2rem;
 
@@ -101,7 +103,6 @@
     
         &__button {
             padding: 1.2rem 1.5rem;
-            align-self: flex-start;
             background-color: $almost-black;
             border-radius: 10px;
             font-size: 1.2rem;
