@@ -58,6 +58,7 @@
     &__image-hero {
         &--mobile {
             margin-bottom: 1.7rem;
+            width: 100%;
         }
 
         &--desktop {
@@ -125,6 +126,7 @@
     
             &--desktop {
                 display: inline;
+                width: 100%;
             }
         }
     }
