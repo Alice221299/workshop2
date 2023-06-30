@@ -1,1 +1,7 @@
 @import "./universals.scss";
+@import "./header.scss";
+@import "./main.scss";
+
+.body-fixed {
+    position: fixed;
+}
